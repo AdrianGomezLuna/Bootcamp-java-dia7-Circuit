@@ -16,13 +16,13 @@ public class CircuitBreakerApplication implements CommandLineRunner{
 	@Override
 	public void run(String... args) throws Exception {
 			
-		Circuit circuito = new Circuit(5D, 8D, 10D,20,13);		
+		Circuit circuito = new Circuit(5, 8, 10D,20,13);		
 		System.out.println(circuito.getEstado());
 		
-		Circuit circuito2 = new Circuit(15D, 1D, 10D,20,16);		
+		Circuit circuito2 = new Circuit(15, 1, 10D,20,16);		
 		System.out.println(circuito2.getEstado());
 		
-		Circuit circuito3 = new Circuit(1D, 15D, 10D,20,21);		
+		Circuit circuito3 = new Circuit(1, 15, 10D,20,21);		
 		System.out.println(circuito3.getEstado());
 		
 	}
